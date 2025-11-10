@@ -1,0 +1,107 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+	font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+	background: #0f172a;
+	color: #e2e8f0;
+}
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 24px 16px 64px;
+}
+.header { margin-bottom: 16px; }
+.header h1 { margin: 0; font-size: 28px; font-weight: 700; }
+.card {
+	background: #111827;
+	border: 1px solid #1f2937;
+	border-radius: 12px;
+	padding: 16px;
+	margin: 16px 0;
+}
+.form { display: grid; gap: 12px; }
+.field { display: grid; gap: 6px; }
+.label { font-size: 12px; color: #9ca3af; }
+.input, .textarea {
+	width: 100%;
+	background: #0b1220;
+	color: #e5e7eb;
+	border: 1px solid #1f2937;
+	border-radius: 8px;
+	padding: 10px 12px;
+}
+.input:focus, .textarea:focus { outline: none; border-color: #334155; }
+.actions { display: flex; gap: 8px; }
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	height: 36px;
+	padding: 0 12px;
+	border-radius: 8px;
+	border: 1px solid #334155;
+	background: #0b1220;
+	color: #e5e7eb;
+	text-decoration: none;
+	cursor: pointer;
+}
+.btn:hover { background: #0f172a; }
+.btn-primary {
+	background: #2563eb;
+	border-color: #2563eb;
+	color: white;
+}
+.btn-primary:hover { background: #1d4ed8; }
+.btn-danger {
+	background: #ef4444;
+	border-color: #ef4444;
+	color: white;
+}
+.btn-danger:hover { background: #dc2626; }
+.alert {
+	padding: 10px 12px;
+	border-radius: 8px;
+	margin: 12px 0;
+	font-size: 14px;
+}
+.alert-error { background: #7f1d1d; color: #fecaca; border: 1px solid #b91c1c; }
+.alert-success { background: #064e3b; color: #bbf7d0; border: 1px solid #047857; }
+.muted { color: #9ca3af; }
+.notes { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+.note {
+	border: 1px solid #1f2937;
+	border-radius: 8px;
+	padding: 12px;
+	background: #0b1220;
+	display: grid;
+	gap: 10px;
+}
+.note-head {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 12px;
+}
+.note-title { font-size: 16px; }
+.note-meta { display: flex; gap: 12px; color: #64748b; font-size: 12px; }
+.note-body pre {
+	margin: 0;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	font-size: 13px;
+	color: #cbd5e1;
+}
+.note-actions {
+	display: flex;
+	gap: 8px;
+}
+.pagination {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 12px;
+}
+.footer { margin-top: 24px; text-align: center; }
+
+
